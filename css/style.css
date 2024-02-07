@@ -588,6 +588,10 @@ nav .navbar-toggler:focus {
 #blog .card-Contact .right .ico-box .bi{
 font-size: 15px;
 }
+
+#blog  .card-footer p{
+  font-size: 13px;
+}
 /* ? ------------ end BLog section------ */
 
 /* ------------start Contact section------- */
@@ -650,7 +654,6 @@ color: var(--main-color);
   color: #ffffff;
   background-color: var(--main-color);
 }
-
 /* ------------end Contact section-------- */
 
 /* ------------start footer section-------- */
@@ -719,6 +722,15 @@ background-color: #0062d3;
   nav .bg-white {
     background-color: transparent !important;
   }
+
+  body:not(body:has(:target)) li a[href="#main"]::before,
+  body:has(.about:target) li a[href="#about"]::before,
+  body:has(.service:target) li a[href="#service"]::before,
+  body:has(.work:target) li a[href="#work"]::before,
+  body:has(.blog:target) li a[href="#blog"]::before,
+  body:has(.Contact:target) li a[href="#Contact"]::before {
+      width: 80%;
+  }
   /* ---------end-nav-bar------------ */
 
   /* start main section */
@@ -738,18 +750,11 @@ background-color: #0062d3;
     background-attachment: fixed;
   }
   /*todo ------------ end slider section------ */
+
+   /* ?-------start Contact------- */
   #Contact{
     background-attachment: fixed;
   }
-body:not(body:has(:target)) li a[href="#main"]::before,
-body:has(.about:target) li a[href="#about"]::before,
-body:has(.service:target) li a[href="#service"]::before,
-body:has(.work:target) li a[href="#work"]::before,
-body:has(.blog:target) li a[href="#blog"]::before,
-body li: a[href="#dropdown"]::before,
-body:has(.Contact:target) li a[href="#Contact"]::before {
-    width: 80%;
-}
-
+     /* ?-------end Contact------- */
 }
 
