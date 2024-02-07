@@ -1,0 +1,755 @@
+:root{
+  --main-color:#0078ff
+;
+}
+::selection{
+color: #ffffff;
+background-color:var(--main-color);
+}
+body {
+  color: #4e4e4e;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul li{
+list-style-type: none;
+}
+
+
+/* ---------start-nav-bar------------ */
+.bg-color{
+  background-image: linear-gradient(rgba(0, 0, 0,.9),rgba(0, 0, 0,.9));
+}
+
+nav .navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+
+nav .navbar-toggler .bi {
+  color: #ffffff !important;
+  font-size: 40px;
+}
+nav ul li {
+  --bs-nav-link-color: #ffffff;
+  --bs-navbar-active-color: #ffffff;
+  --bs-nav-link-hover-color: #ffffff;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: .5px;
+  width: 0;
+  background-color: #ffffff;
+  transition: 400ms all;
+}
+
+nav .container a {
+  --bs-navbar-brand-color: #ffffff;
+  --bs-navbar-brand-hover-color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+.dropdown-menu li:hover >a{
+  color: #0062d3;
+}
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: static;
+  transition: 400ms all;
+  right: 100%;
+  top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+  transform: translateX(20px);
+  left: auto;
+  transition: 200ms all;
+}
+@media(min-width:1400px)
+{
+  .dropdown-menu .dropdown-submenu {
+    left: 100%;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+    right: auto;
+  }
+  
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+  visibility: visible;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu-left {
+  transform: translateX(1px);
+  opacity: 1;
+}
+
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+/*---------- end-nav-bar--------------- */
+
+/* ------start General------ */
+.heading {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 38px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading h2 {
+  font-size: 3rem;
+}
+
+.f-w400 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* ------end General-------- */
+
+
+
+/* todo start main sec */
+#main {
+  --bs-link-color-rgb: #ffffff !important;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../image/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+#main .hero h1 {
+  font-size: 4rem;
+  position: relative;
+  text-align: center;
+}
+
+#main .hero h1:after {
+  content: "";
+  font-size: 2rem;
+  position: absolute;
+  bottom: -60px;
+  width: 80%;
+  left: 10%;
+  animation: typing 10s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "F|";
+  }
+
+  1% {
+    content: "Fr|";
+  }
+
+  2% {
+    content: "Fre|";
+  }
+
+  3% {
+    content: "Free|";
+  }
+
+  4% {
+    content: "Freel|";
+  }
+
+  5% {
+    content: "Freela|";
+  }
+
+  6% {
+    content: "Freelan|";
+  }
+
+  7% {
+    content: "Freelanc|";
+  }
+
+  9% {
+    content: "Freelance|";
+  }
+
+  10% {
+    content: "Freelancer|";
+  }
+
+  20% {
+    content: " Freelancer.|";
+  }
+
+  21% {
+    content: "  Freelancer|";
+  }
+
+  22% {
+    content: "  Freelance|";
+  }
+
+  23% {
+    content: "  Freelanc|";
+  }
+
+  24% {
+    content: "  Freelan|";
+  }
+
+  25% {
+    content: "  Freela|";
+  }
+
+  26% {
+    content: "  Freel|";
+  }
+
+  27% {
+    content: "  Free|";
+  }
+
+  28% {
+    content: "  Fre|";
+  }
+
+  29% {
+    content: "  Fr|";
+  }
+
+  30% {
+    content: "  F|";
+  }
+
+  31% {
+    content: " | ";
+  }
+
+  32% {
+    content: " P|";
+  }
+
+  33% {
+    content: "  Ph|";
+  }
+
+  34% {
+    content: " Pho|";
+  }
+
+  35% {
+    content: "  Phot|";
+  }
+
+  36% {
+    content: " Photo|";
+  }
+
+  37% {
+    content: "  Photog|";
+  }
+
+  38% {
+    content: " Photogr|";
+  }
+
+  39% {
+    content: " Photogra|";
+  }
+
+  40% {
+    content: "  Photograp|";
+  }
+
+  41% {
+    content: "  Photograph|";
+  }
+
+  42% {
+    content: " Photographe|";
+  }
+
+  43% {
+    content: " Photographer.|";
+  }
+
+
+  53% {
+    content: " Photographe|";
+  }
+
+  54% {
+    content: " Photograph|";
+  }
+
+  56% {
+    content: " Photograp|";
+  }
+
+  57% {
+    content: " Photogra|";
+  }
+
+  58% {
+    content: " Photogr|";
+  }
+
+  59% {
+    content: " Photog|";
+  }
+
+  60% {
+    content: " Photo|";
+  }
+
+  61% {
+    content: " Pho|";
+  }
+
+  62% {
+    content: " Ph|";
+  }
+
+  63% {
+    content: "  P|";
+  }
+
+  64% {
+    content: " |";
+  }
+
+  68% {
+    content: "  D|";
+  }
+
+  69% {
+    content: "  De|";
+  }
+
+  70% {
+    content: " Des|";
+  }
+
+  71% {
+    content: "  Desi|";
+  }
+
+  72% {
+    content: " Desig|";
+  }
+
+  73% {
+    content: " Design|";
+  }
+
+  74% {
+    content: "  Designe|";
+  }
+
+  75% {
+    content: " Designer|";
+  }
+
+  75% {
+    content: " Designer.|";
+  }
+
+  90% {
+    content: " Designer|";
+  }
+
+  91% {
+    content: " Designe|";
+  }
+
+  92% {
+    content: " Design|";
+  }
+
+  93% {
+    content: " Desig|";
+  }
+
+  94% {
+    content: " Desi|";
+  }
+
+  95% {
+    content: " Des|";
+  }
+
+  96% {
+    content: " De|";
+  }
+
+  97% {
+    content: " D|";
+  }
+
+  98% {
+    content: " |";
+  }
+
+  100% {
+    content: "|";
+  }
+}
+/* todo end main sec */
+
+/* !-------start about------- */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.progress-style {
+  --bs-progress-bg: #cde1f8;
+  --bs-progress-border-radius: 0;
+  --bs-progress-height: .7rem;
+}
+
+.f-detial {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+
+.h2-custom {
+  font-size: 2rem;
+  position: relative;
+}
+
+.h2-custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  height: 3px;
+  width: 100px;
+  background-color: var(--main-color);
+}
+/* !-------end about------- */
+
+/* todo-------start service------- */
+.service .item .inner {
+  background-color: #ffffff;
+}
+
+.service .item .inner span {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  font-size: 2.5rem;
+  border: .8rem solid var(--main-color);
+  border-radius: 50%;
+  transition: 400ms all;
+}
+
+.service .item:hover span {
+  border-color: #cde1f8;
+  color: #ffffff;
+  background-color: var(--main-color);
+}
+/* todo-------end service------- */
+
+/* ?-------start status------- */
+#status {
+  background-image: url('../image/post-3.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+.overlay {
+  padding: 8rem 0;
+  background-image: linear-gradient(rgba(0, 120, 255, .7), rgba(0, 120, 255, .7));
+}
+
+.status .container .status-ico {
+  display: flex;
+  justify-content: center;
+}
+
+.status .container .status-ico span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: .8rem solid #cde1f8;
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+.status .container .status-box p{
+  font-size: 1rem;
+}
+.status .container .status-ico span .bi {
+  color: #ffffff;
+}
+
+/* ?-------end staus------- */
+
+/* !-------start protofilo section------ */
+
+.protofilo .pro-boxes .inner img {
+  transition: all 1s;
+}
+
+.protofilo .pro-boxes .inner:hover img {
+  transform: scale(1.2);
+}
+.protofilo .pro-boxes .inner {
+  background-color: #fff;
+}
+
+.protofilo .pro-boxes .text-contain {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.protofilo span.bi {
+  font-size: 2.5rem;
+  color: rgb(0, 120, 255);
+  padding: 0 12px;
+}
+/* !-------end protofilo section------ */
+
+/*todo ------------ start slider section------ */
+#slider .carousel {
+  background-image: url(../image/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+#slider .overlay1 {
+  padding: 5rem 0;
+
+  background-image: linear-gradient(rgba(0, 120, 255, .7), rgba(0, 120, 255, .7));
+}
+
+#slider .carousel-indicators {
+  bottom: 50px;
+}
+
+#slider .carousel-item .carousel-caption p {
+  max-width: 70%;
+}
+
+#slider .carousel-item img {
+  width: 130px;
+  height: 130px;
+}
+
+#slider .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/* todo ------------ end slider section------ */
+
+/* ? ------------ start Blog section------ */
+#blog .card-catogery{
+  padding: 3px 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: var(--main-color);
+}
+
+#blog .card-Contact .left .img-box{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#blog .card-Contact .right .ico-box .bi{
+font-size: 15px;
+}
+/* ? ------------ end BLog section------ */
+
+/* ------------start Contact section------- */
+#Contact{
+  background-image: url('../image/overlay-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;  
+}
+
+#Contact .overlay2{
+  background-image: linear-gradient(rgba(0, 120, 255, .7), rgba(0, 120, 255, .7));
+  padding: 8rem 0 3rem;;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#Contact form textarea{
+  height: 100px;
+  resize: vertical;
+}
+
+#Contact .overlay2 .Contact-box{
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+}
+
+#Contact .overlay2 .Contact-box button[type=submit] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 1.2rem;
+}
+#Contact .overlay2 .Contact-box button[type=submit]:hover {
+  background: #3393ff;
+  text-decoration: none;
+  box-shadow: 0 0 0 4px #cde1f8;
+}
+
+#Contact .right span.bi {
+color: var(--main-color);
+}
+.ico-circle{
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 3px #0078ff;
+  display: block;
+  transition:400ms all ;
+  color: #1e1e1e;
+}
+
+.group-icon ul li:hover .ico-circle {
+  box-shadow: 0 0 0 3px #cde1f8;
+  color: #ffffff;
+  background-color: var(--main-color);
+}
+
+/* ------------end Contact section-------- */
+
+/* ------------start footer section-------- */
+footer{
+box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1) inset;
+background-color: #0062d3;
+}
+/* ------------end footer section-------- */
+
+@media(max-width:992px) {
+  nav > ul{
+    padding-inline: 10px;
+  }
+  nav ul{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    
+  }
+  nav ul li {
+    --bs-nav-link-color: #1e1e1e;
+    --bs-navbar-active-color: #1e1e1e;
+    --bs-nav-link-hover-color: var(--main-color);
+     
+  }
+  /* ---------start-nav-bar------------ */
+  .dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+  }
+
+  #main .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #main .hero h1:after {
+    content: "";
+    font-size: 1.5rem;
+    bottom: -40px;
+    left: 10%;
+  }
+
+  /* ---------end-nav-bar------------ */
+
+  body:has(.main:target) li a[href="#main"],
+  body:has(.about:target) li a[href="#about"],
+  body:has(.service:target) li a[href="#service"],
+  body:has(.work:target) li a[href="#work"],
+  body:has(.blog:target) li a[href="#blog"],
+  body:has(m:target) li a[href="#dropdown"],
+  body:has(.Contact:target) li a[href="#Contact"]{
+   color: #0062d3;
+  }
+
+}
+
+@media (min-width:992px) {
+  /* ---------start-nav-bar------------ */
+  nav ul li:hover a::before {
+    width: 80%;
+  }
+
+  .dropdown-menu .dropdown-submenu {
+    position: absolute;
+    display: block;
+  }
+
+  nav .bg-white {
+    background-color: transparent !important;
+  }
+  /* ---------end-nav-bar------------ */
+
+  /* start main section */
+  #main {
+    background-attachment: fixed;
+  }
+  /* end main section */
+
+  /* ?-------start status------- */
+    #status {
+      background-attachment: fixed;
+    }
+  /* ?-------end status------- */
+
+  /*todo ------------ start slider section------ */
+  #slider .carousel {
+    background-attachment: fixed;
+  }
+  /*todo ------------ end slider section------ */
+  #Contact{
+    background-attachment: fixed;
+  }
+body:not(body:has(:target)) li a[href="#main"]::before,
+body:has(.about:target) li a[href="#about"]::before,
+body:has(.service:target) li a[href="#service"]::before,
+body:has(.work:target) li a[href="#work"]::before,
+body:has(.blog:target) li a[href="#blog"]::before,
+body li: a[href="#dropdown"]::before,
+body:has(.Contact:target) li a[href="#Contact"]::before {
+    width: 80%;
+}
+
+}
+
