@@ -36,8 +36,11 @@ nav ul li {
   --bs-navbar-active-color: #ffffff;
   --bs-nav-link-hover-color: #ffffff;
   position: relative;
-}
 
+}
+nav div>ul>li {
+  padding-left:10px ;
+}
 nav ul li a::before {
   content: "";
   position: absolute;
@@ -51,9 +54,12 @@ nav ul li a::before {
 nav .container a {
   --bs-navbar-brand-color: #ffffff;
   --bs-navbar-brand-hover-color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
-
+nav .container a.navbar-brand{
+  font-size: 1.75rem;
+}
 .dropdown-menu li {
   position: relative;
 }
