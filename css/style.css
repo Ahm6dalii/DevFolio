@@ -583,6 +583,7 @@ nav .navbar-toggler:focus {
 }
 .protofilo .pro-boxes .inner {
   background-color: #fff;
+  cursor: pointer;
 }
 
 .protofilo .pro-boxes .text-contain {
@@ -726,6 +727,9 @@ background-color: #0062d3;
 /* ------------end footer section-------- */
 
 @media(max-width:992px) {
+  nav .container a {
+  font-size: 15px;
+}
   nav > ul{
     padding-inline: 10px;
   }
